@@ -18,6 +18,7 @@ class CabinaAnimali(Cabina):
     def __str__(self):
         stato = "Disponibile" if self._disponibile else "Occupata"
         return f"{self._codice}: Animali | {self._letti} letti - Ponte {self._ponte} - Prezzo {self._prezzo}€ - Max animali: {self._numero_animali} - {stato}"
-
+    def __repr__(self):
+        return f"(codice={self._codice}, letti={self._letti}, ponte={self._ponte}, prezzo={self._prezzo}, numero_animali={self._numero_animali})"
     def calcola_prezzo(self):
         return self._prezzo * (1 + 0.10 * self._numero_animali)
