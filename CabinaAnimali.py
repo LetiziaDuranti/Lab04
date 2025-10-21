@@ -1,8 +1,8 @@
 from Cabina import Cabina
 
 class CabinaAnimali(Cabina):
-    def __init__(self, codice, posti, ponte, prezzo, numero_animali):
-        super().__init__(codice, posti, ponte, prezzo)
+    def __init__(self, codice, letti, ponte, prezzo, numero_animali):
+        super().__init__(codice, letti, ponte, prezzo)
         self._numero_animali = numero_animali
 # metodi getter e setter
     @property
