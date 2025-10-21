@@ -5,6 +5,8 @@ class Persona:
         self._nome=nome
         self._cognome=cognome
         self._cabina = None
+
+# metodi getter e setter
     @property
     def codice(self):
         return self._codice  # immutabile
@@ -18,7 +20,7 @@ class Persona:
         if not valore.strip():
             raise ValueError("Il nome non può essere vuoto")
         self._nome = valore
-# metodi getter e setter
+
     @property
     def cognome(self):
         return self._cognome

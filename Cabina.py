@@ -9,7 +9,7 @@ class Cabina:
 # metodi getter e setter
     @property
     def codice(self):
-        return self._codice  # immutabile
+        return self._codice
 
     @property
     def letti(self):
